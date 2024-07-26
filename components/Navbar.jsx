@@ -29,7 +29,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='bg-blue-700 sticky top-0 z-10 hover:bg-white text-white hover:text-black cursor-pointer hover:border-b'>
+    <nav className='bg-blue-700 sticky top-0 z-10  text-white cursor-pointer '>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-20 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
@@ -77,7 +77,7 @@ const Navbar = () => {
                   href="/"
                   className={`${
                     pathname === "/" ? "font-bold border-b-2" : ""
-                  }   hover:scale-105 hover:border-black  px-3 py-2 tracking-wider`}
+                  }   hover:scale-105   px-3 py-2 tracking-wider`}
                 >
                   Home
                 </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   href="/properties"
                   className={`${
                     pathname === "/properties" ? "font-bold border-b-2" : ""
-                  }   hover:scale-105 hover:border-black  px-3 py-2 tracking-wider`}
+                  }   hover:scale-105   px-3 py-2 tracking-wider`}
                 >
                   Properties
                 </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
                       pathname === "/properties/add"
                         ? "font-bold border-b-2"
                         : ""
-                    }    hover:scale-105 hover:border-black  px-3 py-2 tracking-wider`}
+                    }    hover:scale-105   px-3 py-2 tracking-wider`}
                   >
                     Add Properties
                   </Link>
