@@ -186,7 +186,7 @@ const Navbar = () => {
                   >
                     <Link
                       href='/profile'
-                      className='block px-4 py-2 text-sm text-gray-700'
+                      className='block px-4 py-2 text-sm text-gray-700 hover:scale-105 hover:font-bold'
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-0'
@@ -198,7 +198,7 @@ const Navbar = () => {
                     </Link>
                     <Link
                       href='/properties/saved'
-                      className='block px-4 py-2 text-sm text-gray-700'
+                      className='block px-4 py-2 text-sm text-gray-700 hover:scale-105 hover:font-bold'
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-2'
@@ -213,7 +213,7 @@ const Navbar = () => {
                         setIsProfileMenuOpen(false);
                         signOut();
                       }}
-                      className='block px-4 py-2 text-sm text-gray-700'
+                      className='block px-4 py-2 text-sm text-gray-700 hover:scale-105 hover:font-bold'
                       role='menuitem'
                       tabIndex='-1'
                       id='user-menu-item-2'
@@ -234,6 +234,9 @@ const Navbar = () => {
           <div className='space-y-1 px-2 pb-3 pt-2'>
             <Link
               href='/'
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
               className={`${
                 pathname === '/' ? 'bg-black' : ''
               } text-white block rounded-md px-3 py-2 text-base font-medium`}
@@ -242,6 +245,9 @@ const Navbar = () => {
             </Link>
             <Link
               href='/properties'
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+              }}
               className={`${
                 pathname === '/properties' ? 'bg-black' : ''
               } text-white block rounded-md px-3 py-2 text-base font-medium`}
@@ -251,6 +257,9 @@ const Navbar = () => {
             {session && (
               <Link
                 href='/properties/add'
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                }}
                 className={`${
                   pathname === '/properties/add' ? 'bg-black' : ''
                 } text-white block rounded-md px-3 py-2 text-base font-medium`}
