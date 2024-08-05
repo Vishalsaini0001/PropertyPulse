@@ -23,4 +23,4 @@ const FeaturedProperties = async () => {
     )
   );
 };
-
+export default FeaturedProperties;
