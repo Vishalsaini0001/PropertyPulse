@@ -87,7 +87,7 @@ const PropertyAddForm = () => {
     // Clone images array
     const updatedImages = [...fields.images];
 
-    // Add new files to the array
+    // Add new files to the arra
     for (const file of files) {
       updatedImages.push(file);
     }
